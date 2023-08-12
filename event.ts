@@ -1,9 +1,9 @@
-import {schnorr} from '@noble/curves/secp256k1'
-import {sha256} from '@noble/hashes/sha256'
-import {bytesToHex} from '@noble/hashes/utils'
+import { schnorr } from '@noble/curves/secp256k1'
+import { sha256 } from '@noble/hashes/sha256'
+import { bytesToHex } from '@noble/hashes/utils'
 
-import {getPublicKey} from './keys.ts'
-import {utf8Encoder} from './utils.ts'
+import { getPublicKey } from './keys.ts'
+import { utf8Encoder } from './utils.ts'
 
 /* eslint-disable no-unused-vars */
 export enum Kind {
@@ -30,7 +30,11 @@ export enum Kind {
   HttpAuth = 27235,
   ProfileBadge = 30008,
   BadgeDefinition = 30009,
-  Article = 30023
+  Article = 30023,
+  MuteList = 10000,
+  CategorizedPeopleList = 30000,
+  CategorizedBookmarkList = 30001,
+  CategorizedRelayList = 30022
 }
 
 export type EventTemplate<K extends number = Kind> = {
