@@ -55,7 +55,7 @@
     "prettier": "^2.8.4",
     "ts-jest": "^29.1.0",
     "tsd": "^0.22.0",
-    "typescript": "^5.0.4",
+    "typescript": "^5.1.6",
     "websocket-polyfill": "^0.0.3"
   }
 }
